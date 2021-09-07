@@ -1,0 +1,31 @@
+/*FOOTER*/
+
+footer{
+    color: #fff;
+    text-align:center;
+    font-style: italic;
+    font-size:20px;
+    width: 100%;
+    align-self: flex-end;
+    padding: 10px 0 10px 0;
+    background-color: $colorPrimario;
+
+    div{
+        
+        i{
+            // width:40px;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+footer div .facebook:hover {background: #3b5998;}
+footer div .instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+footer div .whatsapp:hover {background: #43BF51;}
+footer div .mail:hover {background: #1da1f2;}
+footer div .github:hover {background: #666666;}

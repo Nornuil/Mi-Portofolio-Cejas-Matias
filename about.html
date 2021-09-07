@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Cejas, Cejas Matias, Portafolio, Portfolio, desarrollo web, diseño web, programación, HTML, CSS, Android, NodeJS, JavaScript, Kotlin, Codernaut, front, Buenos Aires, Argentina, contacto, about">
+  <meta name="description" content="En esta página podran ponerse en contacto conmigo, asi tambien poder conocerme ya sea de manera virtual o conciliar un cita o entrevista.">
+  <title>Contacto</title>
+  <link rel="icon" href="./img/iconos/icono-pagina6.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="bodyAbout">
+  <header>
+    <h1 class="tituloAbout">Contacto</h1>
+    <ul class="menuAbout">
+      <li class="li1"><a href="./index.html">Inicio</a></li>
+      <li class="li2"><a href="./proyects.html">Mis Proyectos</a></li>
+      <li class="li3"><a href="./gallery.html">Galeria</a></li>
+      <li class="li4"><a href="./Skills.html">Conocimientos</a></li>
+    </ul>
+    <hr>
+
+  </header>
+
+  <main class="mainAbout">
+
+    <div class="tarjetaContacto">
+      <form action="#" class="fomulario">
+        <div class="formularioContenedor">
+          <h2 class="contactoAbout">Contacto</h2>
+            <div class="contenedor-input">
+              <input class="about__formulario-input" type="text" name="nombre" autocomplete="off" maxlength="15" required>
+              <label class="input-label" for="nombre" class="label-nombre">
+                <span class="content-nombre">Nombre</span>
+              </label>
+            </div>
+              
+          <div class="contenedor-input">
+            <input class="about__formulario-input" type="text" name="nombre-empresa" autocomplete="off" maxlength="15" required>
+            <label class="input-label" for="nombre-empresa" class="label-nombre-empresa">
+              <span class="content-nombre-empresa">Empresa</span>
+            </label>
+          </div>
+            
+          <div class="contenedor-input">
+            <input class="about__formulario-input" type="text" name="email" autocomplete="off" maxlength="15" required>
+            <label class="input-label" for="email" class="label-email">
+              <span class="content-email">Email</span>
+            </label>
+          </div>
+            
+
+          <textarea placeholder="Dejame un Mensaje.." class="textareaAbout"></textarea>
+
+          <div class="btnContenedor">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar
+            </button>
+            <input class="btn btn-reset" type="reset" value="Restablecer">
+          </div>
+        </div>
+
+      </form>
+      <div class="contenedorImagen"></div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade ModalConfirmacion" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex" id="exampleModalLabel">Enviado exitosamente!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body modal-cuerpo">
+            <img src="./img/gif/ok.gif" alt="Enviado" class="gifChecked">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footerAbout">
+    <div>
+      <p>Copyright CoderNaut @ 2021</p>
+      <i class="fab fa-facebook-square facebook"></i>
+      <i class="fab fa-instagram instagram"></i>
+      <i class="fab fa-whatsapp-square whatsapp"></i>
+      <i class="fas fa-paper-plane mail"></i>
+      <i class="fab fa-github-square github"></i>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

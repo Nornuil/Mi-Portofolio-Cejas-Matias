@@ -1,0 +1,138 @@
+/*SKILLS*/
+
+.mainSkills{
+    background-image: url("./img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 10px;
+
+    .contenedorSkills{
+        display: flex;
+        justify-content: space-around;
+        
+        .contenedor-resumen{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .resumen{
+                align-items: center;
+                color: #cfcfcf;
+                text-align: center;
+                font-size: 2rem;
+                background-color: $colorPrimario-opaco;
+                padding: 10px;
+                border-radius: 5px;
+
+                .vocacion{
+                    font-size:2.1;
+                    color: $colorSecundario;
+                    text-transform: uppercase;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 1.5rem
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin: auto;
+                padding-top: 10px;
+                width: 50%;
+            }
+
+            @media (max-width: 540px) {
+                margin: auto;
+                padding-top: 10px;
+                width: 70%;
+            }
+        }
+
+        .contenedorTabla{
+            width:50%;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            background-color:rgba(0, 0, 0, 0.466);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px;
+
+            .tablaSkills{
+                color: #cfcfcf;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content:space-around; 
+
+                .skill{
+                    flex-direction: column;    
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+
+                    .tituloSkill{
+                        transition-duration: .8s;
+                        font-size: 1.5rem;    
+                    }
+
+                    .porcentajeNumero{
+                        
+                        .numero{
+                            text-align: center;
+                            /* margin-right: 60px; */
+                            font-size: 12px;
+                            font-weight: bold;
+                            color:#cfcfcf;
+                        }
+
+                        .porcentajeSkill{
+                            background-color: #cfcfcf;
+                            height:4px;
+                            width: 60%;
+                            border-radius: 10px;
+                            transition-duration: .8s;
+                            margin: auto;
+
+                            .porcentaje{
+                                background-color: $colorSecundario;
+                                height:100%;
+                                /* width:50%; */
+                                border-radius: 10px; 
+                            }
+
+                            .diez{width:10%;}
+                            .veinte{width:20%;}
+                            .treinta{width:30%;}
+                            .cuarenta{width:40%;}
+                            .cincuenta{width:50%;}
+                            .sesenta{width:60%;}
+                            .setenta{width:70%;}
+                            .ochenta{width:80%;}
+                            .noventa{width:90%;}
+                            .cien{width:100%;}
+                        }
+                    }
+
+                    &:hover .porcentajeSkill{
+                        background:rgba(255, 255, 255, 0.5);
+                        width: 80%;
+                        transition-duration: .8s;
+                    }
+                }
+            }
+
+            @media (max-width: 768px) {
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}

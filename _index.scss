@@ -1,0 +1,146 @@
+/*-----------Index----------*/
+
+.videoIndex{
+    position: fixed;
+    max-width: 100%;
+    // min-height: 100%;
+    z-index: -1;
+}
+
+.headerIndex{
+    display: flex;
+    justify-content: space-around;
+    background-image: none;
+    height: 100px;
+
+    .tituloIndex{
+        font-family: 'Righteous', cursive;
+        color:black;
+        text-align: center;
+        font-size:5rem;
+        -webkit-text-stroke: 1px white;
+        margin-bottom:30px;
+
+        @media (max-width: 990px){
+            font-size:4rem;
+        }
+
+        @media (max-width: 576px){
+            font-size:3rem;
+        }
+    }
+
+
+    .header-logo{
+        width: 7rem;
+        position: absolute;
+        left: 85%;
+        margin: 40px;
+        border-radius: 5px;
+
+        @media (max-width: 990px){
+            width: 5rem;
+            top: 0%;
+            left: 80%
+        }
+
+        @media (max-width: 580px){
+            display: none;
+        }
+    }
+}
+
+.mainIndex{
+
+    .menuIndex{
+        margin-left: 15px;
+        height:300px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .liIndex{
+            display: flex;
+            flex-direction: row;
+
+            .link-index{
+                text-align: center;
+                font-family: 'Righteous', cursive;
+                font-size: 40px;
+                background-color:transparent;
+                background-position: center;
+                -webkit-text-stroke: 1px white;
+                transition-duration: 1s;
+                color:transparent;
+
+                &:hover{
+                    text-shadow: 10px 10px 20px, 0 0 5em rgb(255, 255, 255), 0 0 0.5em rgb(255, 255, 255);
+                    font-size: 50px;
+                    background-color:transparent;
+                    transition-duration: 1s;
+                    -webkit-text-stroke: 2px white;
+                }
+            }
+            @media (max-width: 990px){
+
+                .link-index{
+                    font-size:3.5rem;
+                }
+            }
+
+            @media (max-width: 576px){
+
+                .link-index{
+                    font-size:2.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+.footerIndex{
+    position: fixed;
+    bottom: 0; 
+    background: transparent;
+    color: #fff;
+    text-align:center;
+    font-style: italic;
+    font-size:3rem; 
+}
+
+
+@media (max-width: 990px){
+    
+    .footerIndex{
+        background: $colorPrimario;
+
+        .index-footer-contenedor{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            .index-footer-contenedor{
+    
+                .index-credito{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .videoIndex{
+        display: none;
+    }
+
+    body{
+        background-image: url('./img/grid/paisaje6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
