@@ -204,22 +204,22 @@ header ul li a:hover {
 }
 header ul .li1 {
   animation-name: aparecer;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
 }
 header ul .li2 {
   animation-name: aparecer;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease;
 }
 header ul .li3 {
   animation-name: aparecer;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-timing-function: ease;
 }
 header ul .li4 {
   animation-name: aparecer;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-timing-function: ease;
 }
 header div {
@@ -572,6 +572,7 @@ header div {
   flex-direction: row;
   border-radius: 6px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media (max-width: 1300px) {
   .mainGaleria .section-mis-estilos .contenedor-estilos {
@@ -768,6 +769,11 @@ header div {
   z-index: 1000;
   backdrop-filter: blur(15px);
 }
+@media (max-width: 400px) {
+  .mainGaleria .section-mis-estilos .estilo3 .lista-estilo3 .li-lista-estilo3 .iconos-lista-estilo3 {
+    padding: 10px 15px;
+  }
+}
 .mainGaleria .section-mis-estilos .estilo3 .lista-estilo3 .li-lista-estilo3 .iconos-lista-estilo3 ion-icon {
   font-size: 1.5rem;
   pointer-events: none;
@@ -813,6 +819,12 @@ header div {
   width: 50px;
   height: 40px;
   border-radius: 8px;
+}
+@media (max-width: 400px) {
+  .mainGaleria .section-mis-estilos .estilo3 .lista-estilo3 .marker::before {
+    transform: translateX(15%);
+    width: 35px;
+  }
 }
 
 /*ABOUT*/
