@@ -464,11 +464,6 @@ header div {
     width: 90%;
   }
 }
-@media (max-width: 500px) {
-  .mainProyectos .proyectos .lista-proyectos .listProyects .proyect .descripcion-proyecto {
-    font-size: 1.3rem;
-  }
-}
 .mainProyectos .proyectos .lista-proyectos .listProyects .proyect .sql-descripcion {
   margin-bottom: 10px;
   margin-right: auto;
