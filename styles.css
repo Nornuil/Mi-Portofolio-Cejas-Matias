@@ -23,19 +23,19 @@ a {
 }
 
 h3 {
-  color: #cfcfcf;
+  color: #f3f3f3;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
 h2 {
-  color: #cfcfcf;
+  color: #f3f3f3;
 }
 
 p {
   font-size: 1.5rem;
-  color: #cfcfcf;
+  color: #f3f3f3;
 }
 
 /*-----------Index----------*/
@@ -188,7 +188,7 @@ header ul {
   margin-bottom: 10px;
 }
 header ul li a {
-  color: #cfcfcf;
+  color: #f3f3f3;
   margin-left: 10px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -196,7 +196,7 @@ header ul li a {
 }
 header ul li a:hover {
   text-decoration: underline;
-  color: #cfcfcf;
+  color: #f3f3f3;
 }
 @media (max-width: 460px) {
   header ul li a {
@@ -513,12 +513,13 @@ header div {
   color: #cfcfcf;
   text-align: center;
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.466);
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
   border-radius: 5px;
+  border: 1px solid black;
 }
 .mainSkills .contenedorSkills .contenedor-resumen .resumen .vocacion {
-  font-size: 2.1;
+  font-size: 2.1rem;
   color: #bb1f1f;
   text-transform: uppercase;
 }
@@ -808,7 +809,6 @@ header div {
 }
 .mainGaleria .section-mis-estilos .estilo2 {
   background: #DCF5FF;
-  margin: 0;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -1057,16 +1057,20 @@ header div {
   justify-content: center;
 }
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn {
+  color: #e4e4e4;
   font-size: 2rem;
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
+  border: gray solid 1px;
   transition: 0.5s ease;
+  background: transparent;
 }
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn:hover {
-  background: rgba(73, 73, 73, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   color: #e4e4e4;
   transition: 0.5s ease;
+  border: rgba(187, 31, 31, 0.5) solid 1px;
 }
 @media (max-width: 450px) {
   .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn {

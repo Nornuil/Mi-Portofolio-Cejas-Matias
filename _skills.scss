@@ -22,12 +22,13 @@
                 color: #cfcfcf;
                 text-align: center;
                 font-size: 2rem;
-                background-color: $colorPrimario-opaco;
-                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 20px;
                 border-radius: 5px;
+                border: 1px solid rgb(0, 0, 0);
 
                 .vocacion{
-                    font-size:2.1;
+                    font-size:2.1rem;
                     color: $colorSecundario;
                     text-transform: uppercase;
                 }
@@ -54,7 +55,7 @@
             width:50%;
             border: 1px solid rgb(0, 0, 0);
             border-radius: 5px;
-            background-color:rgba(0, 0, 0, 0.466);
+            background-color:$colorPrimario-opaco;
             display: flex;
             flex-direction: row;
             justify-content: center;
