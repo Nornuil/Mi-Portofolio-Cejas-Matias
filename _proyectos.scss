@@ -196,7 +196,7 @@
                 transition: 1s ease-in-out;
 
                 &:hover{
-                    background-color: rgba(49, 49, 49, 0.4);
+                    background-color: rgba(0, 0, 0, 0.8);
                     transition: 1s ease-in-out;
                 }
 
@@ -208,22 +208,74 @@
                     margin: 20px;
                     font-size: 26px;
                 }
-
+                
                 .proyect{
                     display:flex;
-                    /* max-width: 80%; */
                     justify-content: space-around;
                     flex-direction: row;
 
+                    .imgProyect{
+                        border-radius: 5px;
+
+                        @media (max-width: 890px){
+                            width: 40%;
+                            margin: auto;
+                            margin-top: 15px;
+                        }
+                    }
+
                     .descripcion-proyecto{
-                        width: 40%;
-                        font-size: 1.5rem;
+                        width: 50%;
+                        font-size: 2rem;
                         color:#cccccc;
                         text-align: center;                        
                         font-family: $fuenteGeneral;
                         font-weight: 300;
+                        margin: auto;
+                        margin-right: 10px;
+
+                        @media (max-width: 1020px) {
+                            font-size: 1.5rem;
+                            width: 70%;
+                            margin-right: auto;
+                        }
+
+                        @media (max-width: 630px) {                    
+                            width: 90%;
+                        } 
+
+                        @media (max-width: 500px) {
+                    
+                            font-size: 1rem;
+                        } 
+                    }
+                    
+                    .sql-descripcion{
+                        margin-bottom: 10px;
+                        margin-right: auto;
+                    }
+
+                    .sqlProyect{
+                        width: 90%;
+                        image-rendering: -webkit-optimize-contrast;
+                        margin: auto;
+                        margin-bottom: 15px;
+                    }
+
+                    @media (max-width: 890px) {
+                        flex-direction: column;
+                        margin: auto;
+                        margin-top: 15px;
                     }
                 }
+
+                .no-flex{
+                    flex-direction: column;
+                }
+
+                @media (max-width: 630px) {                    
+                    width: 90%;
+                } 
             }            
         }
     }
