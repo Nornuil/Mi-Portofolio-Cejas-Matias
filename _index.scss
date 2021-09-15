@@ -1,5 +1,11 @@
 /*-----------Index----------*/
+body{
+    height: 100vh;
 
+    @media (max-height: 500px) {
+        min-height: 500px;
+    }
+}
 .videoIndex{
     position: fixed;
     max-width: 100%;

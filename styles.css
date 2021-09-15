@@ -39,6 +39,15 @@ p {
 }
 
 /*-----------Index----------*/
+body {
+  height: 100vh;
+}
+@media (max-height: 500px) {
+  body {
+    min-height: 500px;
+  }
+}
+
 .videoIndex {
   position: fixed;
   max-width: 100%;
@@ -571,7 +580,6 @@ header div {
 }
 .mainSkills .contenedorSkills .contenedorTabla .tablaSkills .skill .porcentajeNumero .numero {
   text-align: center;
-  /* margin-right: 60px; */
   font-size: 12px;
   font-weight: bold;
   color: #cfcfcf;
@@ -587,7 +595,6 @@ header div {
 .mainSkills .contenedorSkills .contenedorTabla .tablaSkills .skill .porcentajeNumero .porcentajeSkill .porcentaje {
   background-color: #bb1f1f;
   height: 100%;
-  /* width:50%; */
   border-radius: 10px;
 }
 .mainSkills .contenedorSkills .contenedorTabla .tablaSkills .skill .porcentajeNumero .porcentajeSkill .diez {
