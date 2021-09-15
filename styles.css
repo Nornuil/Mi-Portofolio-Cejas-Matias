@@ -247,7 +247,7 @@ header div {
 }
 @media (max-width: 460px) {
   header {
-    height: 130px;
+    padding-top: 20px;
   }
 }
 
