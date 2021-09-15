@@ -466,7 +466,7 @@ header div {
 }
 @media (max-width: 500px) {
   .mainProyectos .proyectos .lista-proyectos .listProyects .proyect .descripcion-proyecto {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 .mainProyectos .proyectos .lista-proyectos .listProyects .proyect .sql-descripcion {
