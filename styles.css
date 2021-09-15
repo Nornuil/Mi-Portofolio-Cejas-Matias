@@ -950,7 +950,7 @@ header div {
 .mainAbout .tarjetaContacto .fomulario {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  width: 50%;
+  width: 70%;
   border-radius: 5px;
   background-color: transparent;
   display: flex;
@@ -963,7 +963,7 @@ header div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 60%;
 }
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .contactoAbout {
   font-size: 30px;
@@ -1030,6 +1030,11 @@ header div {
   left: 5px;
   transition: transform 0.3s ease;
 }
+@media (max-width: 450px) {
+  .mainAbout .tarjetaContacto .fomulario .formularioContenedor .contenedor-input {
+    width: 80%;
+  }
+}
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .textareaAbout {
   margin-top: 10px;
   background: rgba(0, 0, 0, 0.466);
@@ -1052,7 +1057,7 @@ header div {
   justify-content: center;
 }
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn {
-  font-size: 20px;
+  font-size: 2rem;
   padding: 10px;
   margin: 20px;
   border-radius: 5px;
@@ -1063,12 +1068,22 @@ header div {
   color: #e4e4e4;
   transition: 0.5s ease;
 }
+@media (max-width: 450px) {
+  .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn {
+    font-size: 1.3rem;
+  }
+}
 .mainAbout .tarjetaContacto .fomulario .formularioContenedor .btnContenedor .btn-reset {
   background: #cfcfcf;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .mainAbout .tarjetaContacto .fomulario .formularioContenedor {
     width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .mainAbout .tarjetaContacto .fomulario .formularioContenedor {
+    width: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -1080,10 +1095,15 @@ header div {
   }
 }
 .mainAbout .tarjetaContacto .contenedorImagen {
-  background-image: url("./img/trabajos/3.jpg");
+  background-image: url("./img/contacto/mati-perfil.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50%;
+  width: 30%;
+}
+@media (max-width: 1100px) {
+  .mainAbout .tarjetaContacto .contenedorImagen {
+    width: 50%;
+  }
 }
 @media (max-width: 768px) {
   .mainAbout .tarjetaContacto .contenedorImagen {
