@@ -36,9 +36,13 @@ header{
                     color:$colorFuenteBlancaClara;
                 }
 
+                
                 @media (max-width: 460px) {
                     font-size: 14px;
                 }
+            }
+            @media(max-width: 768px) {
+                display: none;        
             }            
         } 
         .li1{
@@ -64,14 +68,25 @@ header{
             animation-timing-function: ease;    
         }
     }
-    
-    div{
-        width: 100%;
-        height: 2px;
-        background-color:#fff;
+
+    .menuContenedor{
+        display: none; 
+        position: fixed;
+        right: 0%;
+        z-index: 2;
+        background: black;
+        padding: 10px;
+        border-radius: 8px;
+        border: 3px solid white;        
+        margin-right: 30px;
+
+        @media(max-width: 768px) {
+            display: flex;        
+        } 
     }
 
-    
+   
+   
     
     @keyframes aparecer {
         0% {

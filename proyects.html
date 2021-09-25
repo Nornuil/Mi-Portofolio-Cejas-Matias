@@ -13,18 +13,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
+    
 </head>
 <body>
+    <div class="menuPantalla">
+        <div class="menuContenedor-mobil" id="closeMenu">
+            <img src="./img/menu/close/2x/outline_close_white_24dp.png" alt="menu">       
+        </div>
+        <ul class="menuProyect">
+            <li class="li-menu-resp"><a class="link-menu" href="./index.html">Inicio</a></li>
+            <li class="li-menu-resp"><a class="link-menu" href="./gallery.html">Galería</a></li>
+            <li class="li-menu-resp"><a class="link-menu" href="./skills.html">Conocimientos</a></li>
+            <li class="li-menu-resp"><a class="link-menu" href="./about.html">Contacto</a></li>
+        </ul>
+    </div>
     <header class="headerProyectos">
         <h1 class="tituloProyects">Mis Proyectos</h1> 
         <ul class="menuProyects">
             <li class="li1"><a href="./index.html">Inicio</a></li>
-            <li class="li2"><a href="./gallery.html">Galeria</a></li>
+            <li class="li2"><a href="./gallery.html">Galería</a></li>
             <li class="li3"><a href="./skills.html">Conocimientos</a></li>
             <li class="li4"><a href="./about.html">Contacto</a></li>
         </ul>
-        <div class="divisor"></div>        
+        <div class="menuContenedor" id="openMenu">
+            <img src="./img/menu/2x/outline_menu_white_24dp.png" alt="menu">       
+        </div>
+
     </header>
 
     <main class="mainProyectos">
@@ -143,5 +157,7 @@
         </div>
          
     </footer>
+
+    <script src="./js/menu-mobil.js"></script>
 </body>
 </html>

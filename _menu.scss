@@ -1,0 +1,33 @@
+
+body {
+
+    .menuContenedor-mobil{
+        border: 3px solid white;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: 5%;
+    }
+    .menuPantalla{
+        flex-direction: column;
+        position: fixed;
+        z-index: 3;
+        background: black;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        display: none;
+        justify-content: center;
+
+        .menuProyect{
+            .li-menu-resp{
+                margin: 30px;
+
+                .link-menu{
+                    color: #fff;
+                    font-size: 5rem;
+                }
+            }
+        }        
+    }
+}
