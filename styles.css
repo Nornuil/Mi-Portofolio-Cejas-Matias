@@ -196,6 +196,7 @@ body .menuPantalla .menuProyect .li-menu-resp {
 body .menuPantalla .menuProyect .li-menu-resp .link-menu {
   color: #fff;
   font-size: 5rem;
+  text-decoration: none;
 }
 
 /*HEADER GENERAL*/
