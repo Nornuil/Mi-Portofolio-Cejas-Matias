@@ -13,12 +13,10 @@
     function showMenu() {
         menuPantalla.style.display = 'flex';
         menuPantalla.style.overflow = 'hidden';
-        body.style.overflow = 'hidden';
     }
 
     function hideMenu() {
         menuPantalla.style.display = 'none';
         body.style.overflow = 'auto';
-        manuPantalla.style.overflow = 'auto';
     }
 // }())
