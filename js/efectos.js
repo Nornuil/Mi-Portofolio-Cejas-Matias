@@ -17,21 +17,21 @@ $(document).ready(function(){
     $('#card-javascript').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: javascript// + 50
+            scrollTop: javascript - 50
         }, 500)
     });
 
     $('#card-css').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: css// + 50
+            scrollTop: css - 50
         }, 500)
     });
 
     $('#card-sql').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: sql + 200
+            scrollTop: sql //+ 200
         }, 500)
     });
 
