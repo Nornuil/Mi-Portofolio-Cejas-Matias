@@ -17,14 +17,14 @@ $(document).ready(function(){
     $('#card-javascript').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: javascript + 100
+            scrollTop: javascript// + 50
         }, 500)
     });
 
     $('#card-css').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: css + 100
+            scrollTop: css// + 50
         }, 500)
     });
 
