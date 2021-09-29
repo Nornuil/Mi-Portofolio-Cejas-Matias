@@ -6,6 +6,12 @@
     justify-content: space-between;
     background-color: $colorPrimario;
 
+    .parrafoGaleria{
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+    }
+
     .galeriaContenedor{
         display: flex;
         margin-left: 5px;
@@ -29,6 +35,9 @@
                     border: 1px solid #fff;
                 }
             }
+        }
+        @media (max-width: 990px) {
+            display: none;
         }
     }
 

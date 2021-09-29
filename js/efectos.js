@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// Scroll elementos del menu para
+
 
     var android = $('#titulo-android').offset().top,
         javascript = $('#titulo-javascript').offset().top,
@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('#card-sql').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: sql //+ 200
+            scrollTop: sql
         }, 500)
     });
 

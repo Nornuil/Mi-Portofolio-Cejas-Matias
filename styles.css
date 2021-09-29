@@ -79,25 +79,6 @@ body {
     font-size: 3rem;
   }
 }
-.headerIndex .header-logo {
-  width: 7rem;
-  position: absolute;
-  left: 85%;
-  margin: 40px;
-  border-radius: 5px;
-}
-@media (max-width: 990px) {
-  .headerIndex .header-logo {
-    width: 5rem;
-    top: 0%;
-    left: 80%;
-  }
-}
-@media (max-width: 580px) {
-  .headerIndex .header-logo {
-    display: none;
-  }
-}
 
 .mainIndex .menuIndex {
   margin-left: 15px;
@@ -207,6 +188,7 @@ header {
   background-image: url("./img/img-proyectos/2.jpg");
 }
 header h1 {
+  padding-top: 20px;
   font-family: "Roboto", sans-serif;
   color: black;
   text-align: center;
@@ -695,6 +677,11 @@ header .menuContenedor {
   justify-content: space-between;
   background-color: #252525;
 }
+.mainGaleria .parrafoGaleria {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
 .mainGaleria .galeriaContenedor {
   display: flex;
   margin-left: 5px;
@@ -716,6 +703,11 @@ header .menuContenedor {
 .mainGaleria .galeriaContenedor .itemFlex .img-Horizontal:hover {
   opacity: 1;
   border: 1px solid #fff;
+}
+@media (max-width: 990px) {
+  .mainGaleria .galeriaContenedor {
+    display: none;
+  }
 }
 .mainGaleria .section-mis-estilos {
   display: flex;
@@ -1152,7 +1144,7 @@ header .menuContenedor {
   }
 }
 .mainAbout .tarjetaContacto .contenedorImagen {
-  background-image: url("./img/contacto/mati-perfil.jpg");
+  background-image: url("./img/contacto/mati-perfil-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 30%;
