@@ -193,7 +193,8 @@ header h1 {
   color: black;
   text-align: center;
   font-size: 50px;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-stroke: 2px white;
   margin-bottom: 30px;
 }
@@ -228,24 +229,36 @@ header ul li a:hover {
   }
 }
 header ul .li1 {
-  animation-name: aparecer;
-  animation-duration: 0.5s;
-  animation-timing-function: ease;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 header ul .li2 {
-  animation-name: aparecer;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 header ul .li3 {
-  animation-name: aparecer;
-  animation-duration: 1.5s;
-  animation-timing-function: ease;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 header ul .li4 {
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-timing-function: ease;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 header .menuContenedor {
   display: none;
@@ -261,6 +274,17 @@ header .menuContenedor {
 @media (max-width: 768px) {
   header .menuContenedor {
     display: flex;
+  }
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes aparecer {
@@ -424,6 +448,8 @@ header .menuContenedor {
 @media (max-width: 630px) {
   .mainProyectos .tarjetas {
     display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
@@ -529,7 +555,8 @@ header .menuContenedor {
   background-image: url("./img/skills/fondo2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 10px;
 }
 .mainSkills .contenedorSkills {
@@ -755,7 +782,8 @@ header .menuContenedor {
   background: rgba(255, 255, 255, 0.3);
   width: 100%;
   height: 50%;
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales {
   width: 50%;
@@ -775,49 +803,85 @@ header .menuContenedor {
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .facebook {
   background: #3b5998;
-  animation: retroceder 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: retroceder 1s linear;
+          animation: retroceder 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .facebook:hover {
-  animation: adelantar 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: adelantar 1s linear;
+          animation: adelantar 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .instagram {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  animation: retroceder 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: retroceder 1s linear;
+          animation: retroceder 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .instagram:hover {
-  animation: adelantar 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: adelantar 1s linear;
+          animation: adelantar 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .whatsapp {
   background: #43BF51;
-  animation: retroceder 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: retroceder 1s linear;
+          animation: retroceder 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .whatsapp:hover {
-  animation: adelantar 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: adelantar 1s linear;
+          animation: adelantar 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .mail {
   background: #1da1f2;
-  animation: retroceder 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: retroceder 1s linear;
+          animation: retroceder 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .mail:hover {
-  animation: adelantar 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: adelantar 1s linear;
+          animation: adelantar 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .github {
   background: #666666;
-  animation: retroceder 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: retroceder 1s linear;
+          animation: retroceder 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .mainGaleria .section-mis-estilos .estilo1 .contenedor-redes-sociales .github:hover {
-  animation: adelantar 1s linear;
-  animation-fill-mode: forwards;
+  -webkit-animation: adelantar 1s linear;
+          animation: adelantar 1s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes adelantar {
+  0% {
+    z-index: 0;
+    margin-bottom: 0px;
+  }
+  50% {
+    margin-bottom: 50px;
+  }
+  70% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+    margin-bottom: 0px;
+  }
 }
 @keyframes adelantar {
   0% {
@@ -832,6 +896,20 @@ header .menuContenedor {
   }
   100% {
     z-index: 1;
+    margin-bottom: 0px;
+  }
+}
+@-webkit-keyframes retroceder {
+  0% {
+    z-index: 1;
+    margin-bottom: 0px;
+  }
+  50% {
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  100% {
+    z-index: 0;
     margin-bottom: 0px;
   }
 }
@@ -861,12 +939,14 @@ header .menuContenedor {
   padding: 2em;
   border-radius: 10px;
   width: 250px;
-  clip-path: circle(10% at 90% 20%);
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 .mainGaleria .section-mis-estilos .estilo2 .tarjeta:hover {
-  clip-path: circle(75%);
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
   background: #00B6FF;
 }
 .mainGaleria .section-mis-estilos .estilo2 .tarjeta .tarjeta-titulo {
@@ -917,7 +997,8 @@ header .menuContenedor {
   display: inline-block;
   padding: 20px 30px;
   z-index: 2;
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 @media (max-width: 400px) {
   .mainGaleria .section-mis-estilos .estilo3 .lista-estilo3 .li-lista-estilo3 .iconos-lista-estilo3 {
@@ -1222,4 +1303,4 @@ footer div .gitlab:hover {
 
 footer div .github:hover {
   background: #666666;
-}
+}/*# sourceMappingURL=styles.css.map */
